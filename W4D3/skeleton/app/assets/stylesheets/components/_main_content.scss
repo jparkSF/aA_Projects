@@ -1,0 +1,179 @@
+body{
+  width:85%;
+  margin: auto;
+}
+
+
+.body-content{
+  display: flex;
+  margin-top: 15px;
+}
+
+.left-inner-body-content{
+  display: inline-flex;
+  margin:0 10px;
+}
+.right-inner-body-content{
+  flex-direction: column;
+  margin:0 10px;
+  display: inline-table;
+}
+.main-content{
+  ul{
+    margin: 10px 20px;
+  }
+  li{
+    list-style-type: disc;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 17px;
+  }
+  margin:0 10px;
+  flex-direction: column;
+}
+
+.comment_count{
+  i{
+    color:$blue;
+    font-size: 5px;
+
+  }
+  color: $blue;
+}
+
+.video{
+  width: 100%;
+  p{
+    margin-top:5px;
+    font-size: 12px;
+  }
+
+}
+iframe{
+  width: inherit;
+  height: 400px;
+
+}
+
+h1{
+
+  font-style: italic;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+span{
+  margin:0;
+  font-size: 10px;
+  color: $dark-gray;
+}
+h3{
+  font-size:13px;
+  margin:0;
+}
+
+.top-opinion{
+  margin: 5px;
+
+  text-align: center;
+}
+.direction-horizontal{
+  display: inline-flex;
+}
+
+.sub-opinion{
+    text-align: left;
+    line-height: 17px;
+
+  span{
+    text-transform: uppercase;
+  }
+  h3{
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  p{
+    font-size: 14px;
+  }
+  ul{
+    margin: 10px 20px;
+  }
+  li{
+    list-style-type: disc;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+
+  margin: 10px 8px;
+
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid $dark-gray;
+
+    box-sizing: border-box;
+    height: 10px;
+}
+
+
+input[type=submit] {
+    font-family: $sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    width: 80px;
+    background-color: $blue;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+input[type=submit]:hover {
+    background-color: $light-blue;
+}
+.input-field{
+  display: flex;
+  margin: 5px 0;
+
+}
+.bot-opinion {
+
+  p{
+    color: $gray;
+    font-family: $sans-serif;
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+.bot-opinion span:first-of-type{
+  color:black;
+  font-size: 13px;
+}
+
+.post{
+  line-height: 17px;
+  p{
+    font-size: 13px;
+    font-weight: bold;
+
+
+  }
+
+}
+
+.bot-hr{
+
+  padding-bottom: 23px;
+  border-bottom: double $gray;
+
+}
