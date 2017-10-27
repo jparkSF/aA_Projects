@@ -1,0 +1,26 @@
+
+
+<h1 class="title">Cats upon cats!</h1>
+<div class="footer">
+  <a href="<%= new_cat_url %>">Create cat</a>
+
+</div>
+<div class="cat-list">
+
+<ul class="">
+  <% @cats.each do |cat| %>
+    <li>
+      <div class="top">
+
+        <a href="<%= cat_url(cat) %>"><img src="http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg" alt=""> </a>
+       </div>
+      <div class="bottom">
+
+
+      <a href="<%= cat_url(cat) %>"><%= cat.name %></a>
+      </div>
+      </li>
+  <% end %>
+</ul>
+
+</div>
