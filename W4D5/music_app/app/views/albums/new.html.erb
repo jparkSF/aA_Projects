@@ -1,0 +1,47 @@
+<div class="form">
+  <div class="form-contents">
+
+
+    <h2>New Album</h2>
+
+    <form class="" action="<%= albums_url %>" method="post">
+      <%= auth_token %>
+      <%= render 'shared/errors' %>
+      <label for="">Title:
+        <br>
+        <input type="text" name="album[title]">
+      </label>
+      <br>
+
+      <label for="">Band:
+        <br>
+        <select name="album[band_id]">
+          <%= @bands.each do |band| %>
+          <option value="<%= band.id  %>"> <%= band.name %> </option>
+          <% end  %>
+
+        </select>
+      </label>
+      <br>
+
+      <label for="">Live
+        <hr>
+        <br>
+
+        <input type="radio" value="true" name="album[live]" checked>
+        Live
+        <input type="radio" value="false" name="album[live]">
+        Studio
+      </label>
+      <br>
+
+      <label for="">year
+        <br>
+        <input type="text" name="album[year]">
+      </label>
+      <br>
+
+      <input type="submit" value="Add New Album">
+    </form>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="form">
+  <div class="form-contents">
+
+
+    <h2>Sign Up!</h2>
+
+    <form class="" action="<%= users_url %>" method="post">
+      <%= auth_token %>
+      <%= render 'shared/errors' %>
+      <label for="">Email:
+        <br>
+        <input type="text" name="user[email]">
+      </label>
+      <br>
+
+      <label for="">Password:
+        <br>
+        <input type="password" name="user[password]">
+      </label>
+      <br>
+
+      <input type="submit" value="Sign Up">
+    </form>
+  </div>
+</div>

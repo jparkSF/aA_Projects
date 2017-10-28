@@ -1,0 +1,15 @@
+<div class="content">
+<%= render 'shared/errors' %>
+  <div class="inner-content">
+
+
+    <h1>BANDS</h1>
+    <% @bands.each do |band| %>
+    <%= link_to band.name, band_url(band) %>
+    <% end  %>
+
+
+  <h3>LINKS</h3>
+  <%= link_to "New band", new_band_url %>
+</div>
+</div>

@@ -1,0 +1,29 @@
+<div class="content">
+
+  <div class="inner-content">
+
+
+    <h1> <%= @band.name %> </h1>
+    <%= render 'shared/errors' %>
+
+    <h3>ALBUMS</h3>
+
+
+
+    <% @band.albums.each do |album|%>
+    <ul>
+      <li> <%=  link_to album.title, edit_album_url%></li>
+    </ul>
+    <%  end  %>
+
+
+    <h3>LINKS</h3>
+
+    <%= link_to 'New Album', new_band_album_url(@band.id) %>
+    <%= link_to 'Edit Band', edit_band_url(@band.id) %>
+    <%= link_to 'Destroy Band', band_url(@band.id), method: 'delete' %>
+    <%= link_to 'All bands', bands_url %>
+
+
+  </div>
+</div>

@@ -1,0 +1,48 @@
+*{
+  font-family: sans-serif;
+  text-decoration: none;
+  
+
+}
+body{
+  width: 90%;
+  margin:auto;
+}
+
+a{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #9052b7;
+  color: white;
+
+  text-transform: uppercase;
+
+}
+
+.form{
+
+
+  margin: auto;
+  background-color: green;
+  width: 250px;
+  height: 350px;
+
+  display: flex;
+  flex-direction: column;
+
+
+  input{
+
+    justify-content: center;
+    width: 90%;
+  }
+
+  input[type='button']{
+    margin: 10px 0;
+    width: 90%;
+    text-transform: uppercase;
+  }
+}
+.form-contents{
+  margin: auto;
+}
