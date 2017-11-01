@@ -1,0 +1,15 @@
+<h1>Subs#index</h1>
+
+<% @subs.each do |sub| %>
+<ul>
+  <li>
+    <%= link_to sub.title, sub_url(sub) %>
+    by <%= sub.moderator.username %>
+  </li>
+
+</ul>
+<% end %>
+
+
+<br><br>
+<%= link_to 'Create Subs', new_sub_url %>
