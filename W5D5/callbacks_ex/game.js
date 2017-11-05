@@ -61,7 +61,7 @@ class Game {
     return false;
   }
   start(){
-    
+
     while(this.over()){
       this.promptMove((from, to) => console.log(`from: ${from} to: ${to}`));
       if (!this.isValidInput()){
@@ -82,4 +82,8 @@ class Game {
 
 const game = new Game;
 game.start();
+
+
+
+
 // game.promptMove((from, to) => console.log(`from: ${from} to: ${to}`));
