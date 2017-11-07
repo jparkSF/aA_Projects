@@ -1,0 +1,6 @@
+.thumb-list li {
+  display: inline-flex;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
