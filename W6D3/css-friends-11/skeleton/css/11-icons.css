@@ -1,0 +1,22 @@
+/* PHASE 11: Icons */
+
+[class*='icon-']{
+  background-image: url(../images/sprite.png);
+  background-size: 25px 25px;
+  display: inline-block;
+  overflow: hidden;
+  padding-top: 25px;
+  height: 0;
+
+}
+[class*="icon-"] {
+  display: inline-block;
+  background-image: url(".././images/sprite.png");
+  background-size: 25px 250px;
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+  overflow: hidden;
+  height: 0;
+  width: 25px;
+  padding-top: 25px;
+}
