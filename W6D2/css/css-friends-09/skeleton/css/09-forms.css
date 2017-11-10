@@ -1,0 +1,23 @@
+/* PHASE 9: Forms */
+.content-form {
+  background-color: grey;
+  width: 500px;
+  min-height: 400px;
+};
+
+.content {
+
+  display: flex;
+}
+
+.content-img, .content-form{
+  display: inline-flex;
+};
+
+.content-form input{
+  width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   box-sizing: border-box;
+
+}

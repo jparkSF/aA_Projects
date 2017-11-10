@@ -1,0 +1,133 @@
+/*.ttt {
+  width: 500px;
+  height: 500px;
+  background: lightgrey;
+  margin:auto;
+  position: relative;
+}
+
+li {
+    list-style: none;
+    display: inline-flex;
+    width: 30%;
+    height:30%;
+
+    border: 1px solid black;
+    background: lightgreen;
+    justify-content: space-between;
+    vertical-align: middle;
+    /*margin:auto;*/
+    /*padding:5px;*/
+
+/*}
+li:hover{
+  background-color: pink;
+}
+
+ul{
+  box-sizing: border-box;
+  /*border: 1px solid black;*/
+  /*position: absolute;
+  width: 480px;
+  height: 480px;
+  line-height: 0;
+  padding:0;
+  display: block;
+
+}*/
+
+html, body, figure, figcaption, ul, li, h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  text-align: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 30px;
+}
+
+ul {
+  margin: 30px auto;
+  width: 312px;
+  border: 2px solid black;
+}
+
+li {
+  float: left;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  background: lightgreen;
+  cursor: pointer;
+}
+
+li:hover {
+  /*background: pink;*/
+  background-image: url("../images/1.png");
+}
+
+.x,
+.o {
+
+
+  cursor: default;
+}
+
+.x:hover,
+.o:hover {
+  /*background: white;*/
+
+}
+
+.x:after,
+.o:after {
+  background-image: url("../images/5.png");
+
+  display: block;
+  width: 100%;
+  font-size: 60px;
+  line-height: 80px;
+}
+
+.x:after {
+  content: "x";
+}
+
+.o:after {
+  content: "o";
+}
+
+.game-over li {
+  color: red;
+  cursor: default;
+  background: white;
+}
+
+.winner-x .x,
+.winner-o .o {
+  background: green;
+  color: white;
+}
+
+figcaption {
+  font-size: 30px;
+}
