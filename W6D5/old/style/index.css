@@ -1,0 +1,26 @@
+.root{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  display: table;
+  margin: auto;
+}
+
+.headers {
+  display: flex;
+
+}
+
+.header-title {
+  display: flex;
+  padding: 5px 10px 5px 10px;
+  margin: 5px 10px;
+  font-size: 30px;
+  border: 1px solid;
+  cursor: sw-resize;
+}
+
+.tab-widget {
+  border: 1px solid;
+  background-color: beige;
+  min-height: 400px;
+}
