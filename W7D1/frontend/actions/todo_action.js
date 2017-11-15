@@ -3,7 +3,8 @@ import React from 'react';
 
 export const RECEIVE_TODOS = 'RECEIVE_TODOS';
 export const RECEIVE_TODO = 'RECEIVE_TODO';
-
+export const REMOVE_TODO = 'REMOVE_TODO';
+import {fetchTodos} from '../util/fetch_request';
 
 export const receiveTodos = (todos) => ({
   type: RECEIVE_TODOS,
@@ -15,11 +16,10 @@ export const receiveTodo = (todo) => ({
   todo: todo
 });
 
-// export default receiveTodo;
+export const removeTodo = (todo) => ({
+  type: REMOVE_TODO,
+  todo: todo
+});
 
-//
-// store.getState(); // should return default state object
-// store.dispatch(receiveTodo({ id: 3, title: 'New Todo' }));
-// store.getState(); // should include the newly added todo
-// store.dispatch(receiveTodos(newTodos));
-// store.getState(); // should return only the new todos
+
+fetchTodos().then((res) => console.log(res))
